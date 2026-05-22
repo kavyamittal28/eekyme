@@ -1,0 +1,30 @@
+{
+  "name": "eekyme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "eekyme — handmade crafts by Mahima. Marketing site.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "embla-carousel-react": "8.1.6",
+    "embla-carousel-autoplay": "8.1.6",
+    "react-hook-form": "7.52.1",
+    "lucide-react": "0.408.0",
+    "clsx": "2.1.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.7",
+    "postcss": "8.4.39",
+    "autoprefixer": "10.4.19",
+    "@tailwindcss/forms": "0.5.7",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.5"
+  }
+}

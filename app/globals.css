@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────── Base ─────────── */
+@layer base {
+  html, body { @apply m-0 p-0; }
+  body { background: theme('colors.bg'); color: theme('colors.ink'); }
+  img  { @apply block max-w-full; }
+  a    { @apply text-inherit no-underline; }
+}
+
+/* ─────────── Component shorthands ─────────── */
+@layer components {
+  .wrap { @apply max-w-[1280px] mx-auto px-8; }
+
+  .btn {
+    @apply inline-flex items-center gap-2.5 px-6 py-4 rounded-full font-bold text-[15px] tracking-wide
+           border-[2.5px] border-ink transition-[transform,box-shadow] duration-150;
+  }
+  .btn-primary { @apply bg-ink text-bg shadow-hard-sm hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-hard-sm-hover; }
+  .btn-ghost   { @apply bg-transparent text-ink hover:bg-yellow hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-hard-sm-hover; }
+  .btn-pink    { @apply bg-pink text-white shadow-hard-sm hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-hard-sm-hover; }
+
+  .kicker {
+    @apply inline-block text-[13px] font-bold tracking-[0.12em] uppercase
+           px-3.5 py-1.5 rounded-full bg-yellow text-ink border-[1.5px] border-ink mb-5;
+  }
+
+  .section-title {
+    @apply font-display text-[clamp(40px,6vw,80px)] font-black leading-[.95] tracking-[-0.03em] m-0 mb-4 text-ink;
+  }
+
+  .section-sub {
+    @apply text-lg leading-[1.5] max-w-[560px] text-ink-soft mb-12 m-0;
+  }
+
+  .chip-border { @apply border-[1.5px] border-ink; }
+  .chip-border-bold { @apply border-2 border-ink; }
+  .card-border { @apply border-[1.5px] border-ink; }
+  .card-border-bold { @apply border-[2.5px] border-ink; }
+}
+
+/* ─────────── Marquee ─────────── */
+.marquee-track {
+  display: flex; gap: 40px; white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
+
+/* ─────────── Embla overrides ─────────── */
+.embla { position: relative; }
+.embla__viewport { overflow: hidden; }
+.embla__container { display: flex; }
+.embla__slide { flex: 0 0 100%; min-width: 0; position: relative; }
