@@ -12,7 +12,7 @@
 
 /* ─────────── Component shorthands ─────────── */
 @layer components {
-  .wrap { @apply max-w-[1280px] mx-auto px-8; }
+  .wrap { @apply max-w-[1280px] mx-auto px-4 md:px-8; }
 
   .btn {
     @apply inline-flex items-center gap-2.5 px-6 py-4 rounded-full font-bold text-[15px] tracking-wide

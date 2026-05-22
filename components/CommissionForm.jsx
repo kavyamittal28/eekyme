@@ -31,7 +31,7 @@ export default function CommissionForm() {
 
   if (submitted) {
     return (
-      <div className="bg-sky border-[2.5px] border-ink rounded-card p-10 text-center">
+      <div className="bg-sky border-[2.5px] border-ink rounded-card p-6 sm:p-10 text-center">
         <div className="text-5xl">✿</div>
         <div className="font-display text-5xl font-black my-3 tracking-[-0.02em]">{s.big}</div>
         <p className="text-lg leading-[1.5] m-0 mx-auto mb-5 max-w-[380px]">
@@ -56,7 +56,7 @@ export default function CommissionForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="bg-bg-soft rounded-card border-[2.5px] border-ink p-10 shadow-hard"
+      className="bg-bg-soft rounded-card border-[2.5px] border-ink p-5 sm:p-8 md:p-10 shadow-hard"
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
         <Field label={f.name} error={errors.name?.message}>

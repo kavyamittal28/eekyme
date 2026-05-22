@@ -43,8 +43,8 @@ export default function Hero() {
           {/* Slideshow + sticker */}
           <div className="relative">
             <Slideshow />
-            <div className="absolute top-[12%] -right-7 w-[132px] h-[132px] rounded-full bg-yellow text-ink
-                            flex items-center justify-center text-center font-display font-black text-sm
+            <div className="absolute top-[8%] right-2 md:-right-7 w-[88px] h-[88px] md:w-[132px] md:h-[132px] rounded-full bg-yellow text-ink
+                            flex items-center justify-center text-center font-display font-black text-[9px] md:text-sm
                             leading-tight tracking-[0.04em] uppercase border-[2.5px] border-ink shadow-hard
                             rotate-[-12deg] z-[3] animate-wobble">
               {h.stickerLine1}<br />{h.stickerLine2}

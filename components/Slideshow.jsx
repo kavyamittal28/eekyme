@@ -59,7 +59,7 @@ export default function Slideshow() {
       </div>
 
       {/* arrows */}
-      <div className="absolute top-1/2 -translate-y-1/2 -left-5 -right-5 flex justify-between pointer-events-none">
+      <div className="absolute top-1/2 -translate-y-1/2 -left-5 -right-5 hidden md:flex justify-between pointer-events-none">
         <button
           aria-label="Previous"
           onClick={() => emblaApi?.scrollPrev()}

@@ -20,11 +20,11 @@ export default function ProductModal({ product, onClose }) {
   return (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-[100] bg-black/60 flex items-center justify-center p-6 animate-fadein"
+      className="fixed inset-0 z-[100] bg-black/60 flex items-start md:items-center justify-center p-3 md:p-6 animate-fadein overflow-y-auto"
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative bg-bg-soft rounded-card border-[2.5px] border-ink max-w-[800px] w-full
+        className="relative bg-bg-soft rounded-card border-[2.5px] border-ink max-w-[800px] w-full my-auto
                    grid grid-cols-1 md:grid-cols-2 overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,.4)]"
       >
         <button
@@ -46,7 +46,7 @@ export default function ProductModal({ product, onClose }) {
           />
         </div>
 
-        <div className="p-10 flex flex-col">
+        <div className="p-5 md:p-10 flex flex-col">
           <div className="text-[11px] font-bold tracking-[0.1em] uppercase text-ink-soft">{product.cat}</div>
           <h3 className="font-display text-4xl font-black mt-2 mb-3 tracking-[-0.02em]">{product.name}</h3>
           <p className="text-ink-soft leading-[1.5] mb-auto">{product.desc}</p>
